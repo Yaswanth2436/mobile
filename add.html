@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum Calculator</title>
+</head>
+<body>
+
+  <h2>Add Two Numbers</h2>
+  
+  <strong>enter first number:</strong><input type="number" id="num1"  ><br>
+  <strong>enter second number:</strong><input type="number" id="num2"><br>
+
+ 
+
+  <strong>Result:</strong><input type="text" id="result" ><br>
+  
+  
+  <br>
+   <button onclick="add()"  style="background-color:red">Add</button>
+  <button onclick="sub()"  style="background-color:tan">Sub </button>
+  <button onclick="mul()" style="background-color:green">Mul</button>
+  <button onclick="division()" style="background-color:orange">division</button>
+
+  <script>
+    function add() {
+	   n1 = parseFloat(document.getElementById("num1").value) || 0;
+       n2 = parseFloat(document.getElementById("num2").value) || 0;
+
+       sum = n1 + n2;
+
+      document.getElementById("result").value = sum;
+    }
+	function sub() {
+      let n1 = parseFloat(document.getElementById("num1").value) || 0;
+      let n2 = parseFloat(document.getElementById("num2").value) || 0;
+
+      let  sum= n1 - n2;
+
+      document.getElementById("result").value = sum;
+    }
+	function mul() {
+      let n1 = parseFloat(document.getElementById("num1").value) || 0;
+      let n2 = parseFloat(document.getElementById("num2").value) || 0;
+
+      let sum = n1 * n2;
+
+      document.getElementById("result").value = sum;
+    }
+	function division() {
+      let n1 = parseFloat(document.getElementById("num1").value) || 0;
+      let n2 = parseFloat(document.getElementById("num2").value) || 0;
+
+      let sum = n1 / n2;
+
+      document.getElementById("result").value = sum;
+    }
+  </script>
+
+</body>
+</html>
